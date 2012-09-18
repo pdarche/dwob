@@ -1,0 +1,56 @@
+name, amount, status, activity, sector, use, country, town 
+Mamie, 350, in_repayment, Food Market, Food, to purchase more palm oil to sell, Liberia
+Finangnon 2 Group, 1950, in_repayment, Food, Food, purchase bags of rice and beans, Benin
+Abahujimbaraga No 3 Group, 3025, expired, Farming, Agriculture, to buy fertilizers and to pay workers for rice farming, Rwanda
+Bashiraan's Group, 1050, in_repayment, Embroidery, Arts, To buy embroidery material for decorative embroidery business, Pakistan
+Nour, 1200, in_repayment, Tailoring, Services, to purchase a tailoring machine, Iraq
+Achildi, 3000, expired, Farming, Agriculture, to buy mineral fertilizers and seeds, Tajikistan
+Anonymous, 850, in_repayment, Charcoal Sales, Retail, to purchase more sacs of charcoal for resale, Rwanda
+Anita, 825, in_repayment, Textiles, Arts, to purchase fabric threads needles elei printing board, Samoa
+Bernard, 525, paid, Cloth & Dressmaking Supplies, Retail, To buy more fabrics to sell, Rwanda
+Anonymous Group, 1525, in_repayment, Primary\/secondary school costs, Education, to pay school fees for his children renovate his house and invest in business, Sierra Leone
+Pachedu Group, 2900, paid, Retail, Retail, to buy clothing accessories, Zimbabwe
+Concilie, 1025, paid, General Store, Retail, to buy more items for her shop , Rwanda
+Anonymous, 375, in_repayment, Agriculture, Agriculture, to buy organic crop fertilizer, Peru
+Iman, 1000, paid, Personal Housing Expenses, Housing, to purchase home appliances and fix her windows , Palestine
+Jesutin Group, 1750, paid, Plastics Sales, Retail, to purchase plastic bowls and buckets as well as soap for resale, Benin
+Razia's Group, 775, paid, Clothing Sales, Clothing, To buy clothes to sell, Pakistan
+Kanungu Kwetungura-Kihihi Group, 4400, paid, Spare Parts, Retail, The purchase of more spare parts for resell, Uganda
+Turuu, 1575, paid, Clothing Sales, Clothing, To purchase winter clothes wholesale for resale, Mongolia
+Anonymous Group, 1725, defaulted, Vehicle Repairs, Services, To buy materials and tools for her husband's shop, Afghanistan
+Nurjamal's Group, 1475, paid, Cafe, Food, to purchase a vehicle, Kyrgyzstan
+Anonymous, 1000, paid, Livestock, Agriculture, To improve her fish tanks and build a cement wall, Costa Rica
+C4576 Indatwa Group, 1825, paid, Grocery Store, Food, To buy additional goods to sell, Rwanda
+Benkadi Group, 2200, paid, Cereals, Food, Purchase of rice, Mali
+Aina, 675, paid, Food Market, Food, To purchase more bread to sell , Nigeria
+Fatina, 1000, paid, General Store, Retail, To improve her husband's store and to pay her sons' tuition fees, Palestine
+Julio, 10000, paid, Mobile Phones, Retail, To buy more cell phones and accessories and to use for business promotion, United States
+Evelyn Rosaura, 925, paid, Bakery, Food, Increase capital, Guatemala
+Akoua, 1150, paid, Food Production/Sales, Food, Achat des produits d'alimentation general, Togo
+Mykola, 1225, paid, Clothing Sales, Clothing, to increase his working capital, Ukraine
+Felicidad, 275, paid, Food Production/Sales, Food, Capital for ginamos sea salt and coconut wine businesses, Philippines
+Oreb Plus Group, 4800, paid, Food Production/Sales, Food, To buy fertilizer for his fields, The Democratic Republic of the Congo
+Frank, 900, paid, Mobile Phones, Retail, Expand his business, Rwanda
+Ali, 1675, paid, Construction, Construction, Purchase tools for his work, Lebanon
+Battulga, 1700, paid, Clothing Sales, Clothing, to purchase more womens and mens clothes from China for re-sale, Mongolia
+Mario, 1000, paid, Clothing Sales, Clothing, Purchase of jeans T-shirts shirts shorts skirts and shoes, Paraguay
+Yessica, 275, paid, Personal Products Sales, Retail, Purchase of merchandise, Mexico
+Anonymous, 700, in_repayment, Retail, Retail, To supply his shop , Togo
+Jessica, 625, paid, Clothing Sales, Clothing, To increase her merchandise, Peru
+Las Juanas Group, 3525, paid, Services, Services, Operating Capital, Bolivia
+Ema Pilar, 175, paid, Health, Health, Personal expenses University degree, Peru
+Wotunira Group, 3825, paid, Electrical Goods, Retail, To restock supplies of copper cabling arrestors switches plugs power cables outlets and related electrical supplies, Uganda
+Yashar, 1200, paid, Barber Shop, Services, To purchase modern tools for haircuts and a water supply for his barber shop, Azerbaijan
+My Chepel Group, 1050, paid, Retail, Retail, To buy essential items shoes etc   , Togo
+Nguyen Thi, 950, paid, Weaving, Arts, Buy sedge and mats, Viet Nam
+Stamil, 125, paid, Food Market, Food, To buy more food stock for her business, Tanzania
+Jamshid, 1100, paid, Clothing Sales, Clothing, Buy more clothing for his shop, Afghanistan
+Han, 1000, paid, Motorcycle Transport, Transportation, To purchase a new motorcycle to replace the old one for driving motor Remoque taxi, Cambodia
+Mina's Group, 2000, paid, Tailoring, Services, To purchase a sewing machine, Uganda
+Nemesia, 1025, paid, Food Production/Sales, Food, To purchase greater quantities of products for the preparation of her delicious stews, Peru
+Ama, 1025, paid, Fruits & Vegetables, Food, To purchase bananas and plantains, Ghana
+Soraida, 1000, paid, Clothing Sales, Clothing, To pay for transportation between Ayacucho and the rest of Per as well as the purchase of larger quantities of clothing to sell to larger quantities of clients, Peru
+Utkur, 1175, paid, Food Production/Sales, Food, Business expansion, Tajikistan
+Sok, 1200, paid, Beauty Salon, Services, To purchase supplies and equiptment needed to open a hair salon, Cambodia
+Kambona, 1200, paid, Agriculture, Agriculture, To transform his successful wholesale store into a larger warehouse store for soft drinks, Tanzania
+Zubaida, 550, paid, Manufacturing, Manufacturing, purchase cloth in bulk for garment business, Pakistan
