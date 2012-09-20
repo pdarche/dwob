@@ -8,7 +8,7 @@ snf <- read.csv(file="http://www.jakeporway.com/teaching/data/snf_2.csv", head=T
 # divided by the number of people of that race stopped.   
 
 #total stops
-total.stopps <- nrow(snf)
+total.stops <- nrow(snf)
 total.frisks <- sum(snf$frisked)
 frisks.by.race <- rev(sort(table(snf$race[snf$frisked == 1])))
 
@@ -25,9 +25,9 @@ perc.frisked <- least.frisked.race/total.frisks
 # other words, are there an equal number of every kind of crime 
 # or are there a few that dominate?
 
-sorted.crimes <- rev(sort(table(snf$crimes)))
+sorted.crimes <- rev(sort(table(snf$crime.suspected)))
 top.50 <- sorted.crimes[1:50]
-barplot(top.50, xlab="crime suspected", ylab="number of stops", col="red", density=(log(top.50)*7))
+barplot(top.50, xlab="crime suspected", ylab="number of stops", cex.lab=.2, col="red", density=(log(top.50)*7))
 
 #Q:	What does this distribution of crimes look like? 
 #A: The distribution looks like a power-law distribution.  
@@ -56,10 +56,12 @@ top.30.abbvs <- sorted.crimes.abbvs[1:30]
 # first).  Huh.  If you do this right, almost all the top 3’s should be the same, but a few are 
 # different.  What are these differences?  
 
-for(i in 1:6){
-  print(rev(sort(table(crime.abbv[snf$race == i]))))
+for(i in -1:6){
+  if(i != 0){	
+  	print(rev(sort(table(crime.abbv[snf$race == i])))[1:3])
+  }
 }
-
+#-1 : FEL MIS CPW 
 # 1 : FEL  MIS CPW  
 # 2 : FEL  MIS  CPW
 # 3 : FEL  MIS  CPW
@@ -69,7 +71,7 @@ for(i in 1:6){
 
 #I also tried this:
 top.3 <- function(...){
-rev(sort(table(crime.abbv[snf$race == ... ])))[1:3]
+	rev(sort(table(crime.abbv[snf$race == ... ])))[1:3]
 }
 
 top.three.by.race <- tapply(sort(crime.abbv), snf$race, top.3)
@@ -98,32 +100,9 @@ time.of.stop <- (table(as.numeric(hour)))
 color.vector <- rep(1,24)
 color.vector[6] <- 2
 color.vector[20] <- 3
-plot(as.vector(time.of.stop), type="l", xlab="time of stop", ylab="number of stops", col=color.vector)
+plot(as.vector(time.of.stop), type="l", xlab="time of stop", ylab="number of stops")
 
 # Create the same plot but with points instead of lines.  Use a different plotting 
 # symbol than the default and color the max point and min points different colors
 plot(as.vector(time.of.stop), type="o", xlab="time of stop", ylab="number of stops", col=color.vector)
-
-# BONUS
-# weight
-fixed.values <- snf[snf$weight > 40 & snf$weight < 400 & snf$height > 40,]
-weight <- fixed.values$weight
-height <- fixed.values$height
-bmi <- (weight)*703/(height*height)
-
-
-# Q: The US Government defines people with BMIs 30 or higher to be obese.  What 
-#    percentage of people with BMI’s greater than or equal to 30 who were stopped 
-#    were ultimately arrested?
-
-bmi.over.30 <- with.bmi[with.bmi$bmi > 30, ]
-num.over.30 <- nrow(bmi.over.30)
-over.30.arrested <- bmi.over.30[bmi.over.30$arrested == 1]
-percent.over.30.arrested <- over.30.arrested/num.over.30
-
-
-bmi.under.30 <- with.bmi[with.bmi$bmi < 30, ]
-num.under.30 <- nrow(bmi.under.30)
-under.30.arrested <- bmi.under.30[bmi.under.30$arrested == 1]
-percent.under.30.arrested <- under.30.arrested/num.under.30
 
