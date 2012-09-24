@@ -147,7 +147,6 @@ for tweet in tweets:
     created_at = tweet["user"]["created_at"]
 
 
-
     # Having the time be a string is annoying.  Let's use the Python time library to convert
     # the time this tweet was created to a UNIX timestamp (learn more about these here - http://en.wikipedia.org/wiki/Unix_timestamp)
     created_at_seconds = time.mktime(time.strptime(tweet["created_at"], "%a %b %d %H:%M:%S +0000 %Y"))
@@ -192,6 +191,6 @@ for tweet in tweets:
             newrow[i] = newrow[i].encode('utf8')
 
     # Write it!
-    csvwriter.writerow(newrow)
+    # csvwriter.writerow(newrow)
 
 # Done!
