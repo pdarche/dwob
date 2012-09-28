@@ -81,5 +81,27 @@ filtered.words <- split.words[ ! (split.words %in% unlist(stop.words)) ]
 
 # PART 3
 
+# Given recent events, I searched for the term "Iran."  I was most interested in seeing who 
+# was tweeting, the contents of their tweets, and where they were tweeting from.  Basically, I went through the same 
+# routine as in our assignment.  The from the user with the most followers came from a London-based Dj
+# named Boy George https://twitter.com/BoyGeorge.  The location from which the most tweets came from 
+# (somewhat unsurprisingly) Jerusalem, and only one tweet came from Tehran.  After going through
+# and doing word counts, I was somewhat dissapoint to see that the top five works had primarily to 
+# with Netanyahu, Israle, Iran, Nuclear, etc.  Basically, a whole mess of people retweeted a NYT
+# article on Netanyahu's speech.  I wasn't able to get as many tweets as I would have liked though 
+# and will recollect another dataset sometime soon.  I'd like to focus on the tweets that come from 
+# outside the US to see people's attitudes, etc.  Twitter seems to be a great resource for getting at 
+# the opinions from groups outside those in one's current geographical, social, or political spheres.
+
+# BONUS
+# I'd really love to get a big picture sense of the tools and techniques that are applied to 
+# common domains of inquiry.  So, of example, if people are doing natural language processing, what 
+# algorithms and approaches are most frequently used there.  Or, if people are doing time-series analysis,
+# pattern-matching, etc.  I know this is big, vaugue, and probably either incorporated into or beyond the scope of 
+# the class, but I love that context.  Maybe another way of putting it is it seems like each of the four step in the 
+# data science workflow are like high level nodes in a taxonomy.  If you could fill out the child nodes, that'd be great! 
+
+
+
 
 
