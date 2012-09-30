@@ -93,6 +93,17 @@ filtered.words <- split.words[ ! (split.words %in% unlist(stop.words)) ]
 # outside the US to see people's attitudes, etc.  Twitter seems to be a great resource for getting at 
 # the opinions from groups outside those in one's current geographical, social, or political spheres.
 
+# UPDATE 9/30
+
+# I reran the exercise, giving more time to collect tweets and found some interesing results.  After
+# adding the additional stopwords "iran", "#iran" I came up with the following list of top words: 
+# #stopdeath   #savehim  #4newiran      swipe   @amnesty      angry 
+       # 143        138        113        111        110        103 
+# After looking into the hashtags it surprised me that the tweets were actaully related to the
+# Gholamreza Khosravi, an Irani political prisoner slated for execution in the coming days.  Looking
+# at the locations from which the tweets wre coming from, Iran was first, followed by Buffalo, the US, and 
+# the UK.  I imagine the ex-pat community is the one generating most of the activity. 
+
 # BONUS
 # I'd really love to get a big picture sense of the tools and techniques that are applied to 
 # common domains of inquiry.  So, of example, if people are doing natural language processing, what 
