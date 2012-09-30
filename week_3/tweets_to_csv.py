@@ -3,10 +3,13 @@
 import json  # Import the library that lets us work with JSON
 import csv   # Import the library that lets us read/write CSVs
 import time  # We're going to need to deal with a quick time conversion in here
+import sys   # Import sys so we can get the filename args 
 
 # The path to the file we want to open (change this for your machine)
 # This should be the result of the streaming API
-infilename = "iran_tweets.json"  
+
+infilename = sys.args[1]  
+tofilename = sys.args[2]
 
 infile = open(infilename, "r") # Open up the file.  "r" says we want to read from it (as opposed to write)
 
@@ -120,7 +123,7 @@ for line in infile:  # Iterate over every line in the file and call it the varia
 
 # Open up the file we want to write to (libya_tweets.csv)
 # csvwriter is an object that will write to that file
-csvwriter = csv.writer(open("iran_tweets.csv", "w"))
+csvwriter = csv.writer(open(tofilename, "w"))
 csvwriter.writerow(["tweet_id", "retweet", "retweet_count", "text", "source", "screen_name", "name", "location", "description", "followers", "following", "created_at", "created_at_seconds", "hashtag1", "hashtag2", "url1", "url2", "mention1", "mention2", "lat", "lon"])
 for tweet in tweets:
     # This will loop over the tweets list and, for each iteration, the "tweet" variable will stand in for each tweet.
