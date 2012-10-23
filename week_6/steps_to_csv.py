@@ -1,12 +1,11 @@
-import json  # Import the library that lets us work with JSON
-import csv   # Import the library that lets us read/write CSVs
-import time  # We're going to need to deal with a quick time conversion in here
-import sys   # Import sys so we can get the filename args       
+import json  
+import csv   
+import sys   
 
 infilename = sys.argv[1]  
 tofilename = sys.argv[2]
 
-infile = open(infilename, "r") # Open up the file.  "r" says we want to read from it (as opposed to write)
+infile = open(infilename, "r") 
 
 data = infile.readlines()
 data = json.loads(data[0])
