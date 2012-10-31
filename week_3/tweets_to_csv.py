@@ -3,13 +3,13 @@
 import json  # Import the library that lets us work with JSON
 import csv   # Import the library that lets us read/write CSVs
 import time  # We're going to need to deal with a quick time conversion in here
-import sys   # Import sys so we can get the filename args 
+import sys   # Import sys so we can get the filename args       
 
 # The path to the file we want to open (change this for your machine)
 # This should be the result of the streaming API
 
-infilename = sys.args[1]  
-tofilename = sys.args[2]
+infilename = sys.argv[1]  
+tofilename = sys.argv[2]
 
 infile = open(infilename, "r") # Open up the file.  "r" says we want to read from it (as opposed to write)
 
@@ -139,7 +139,7 @@ for tweet in tweets:
         retweet_count = tweet["retweeted_status"]["retweet_count"]
     else:
         retweet_count = 0
-    text = tweet["text"]
+    text = unicode(tweet["text"])
     source = tweet["source"]
     screen_name = tweet["user"]["screen_name"]
     name = tweet["user"]["name"]
@@ -188,6 +188,7 @@ for tweet in tweets:
 
     # OK!  Let's write this tweet!
     newrow = [tweet_id, retweet, retweet_count, text, source, screen_name, name, location, description, followers, following, created_at, created_at_seconds, hashtag1, hashtag2, url1, url2, mention1, mention2, lat, lon]
+    
     # Oop, one thing we need to do is convert everything to UTF8 before we write...
     for i in range(len(newrow)):  # For every value in our newrow
         if hasattr(newrow[i], 'encode'):

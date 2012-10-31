@@ -15,8 +15,6 @@ hist(tw$seconds, breaks=500, main="Histogram of Tweets", xlab="timestamp (second
 # A: (hist in repo)I notice significant moment to monent variation in volume as well as larger trends or seasonality in volume  
 
 h <- hist(tw$seconds, breaks=500, main="Histogram of Tweets", xlab="timestamp (seconds)")
-
-
 plot(h$counts, type="l")
 
 # Let’s figure out if there are any cycles / seasonal trends in this data.  Use the 
@@ -24,17 +22,16 @@ plot(h$counts, type="l")
 # NYPD data.  Recall that acf() only looks at a small time frame so you’ll want to 
 # pass it a lag.max argument that’s about 200 or more.  
 # Q: Where is it most likely that we have a cycle and how can you tell?
-# A: it looks like there's seasonality every 
+# A: it looks like there's seasonality every 175 observations or so.  That times 500/60/60 = 24hrs or a seasonality of one day.  
 
 a <- acf(h$counts, lag.max=250)
-
 rev(order(a$acf))
 
 # OK, let’s remove the cycles and analyze this data.  Create an official timeseries 
 # object with frequency equal to the cycle length.  Use decompose() to decompose 
 # the timeseries into its components and plot the results.  
 # Q: What do you see in terms of an overall trend?
-# A:
+# A: There
 
 count <- ts(h$counts, frequency=180)
 parts <- decompose(count)
